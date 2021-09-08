@@ -5,6 +5,7 @@
 
 function isPrime(n) {
     for (let i = 2; i < n ; i++) { // 1
+        // i < Math.sqrt(n)
         console.log('Running') 
         if(n % i === 0) { // n 
             return false; // 1
@@ -15,7 +16,7 @@ function isPrime(n) {
 
 // Best Case: nubmer = 1 OR number = 2 => O(1)
 // Average Case: O(n) = 1
-// Worst Case: number = 27,277 => O(n)
+// Worst Case: number = 27,277 => O(n) (Improved: O(sqrt(n)))
 
 console.log(isPrime(5))
 console.log(isPrime(9))
